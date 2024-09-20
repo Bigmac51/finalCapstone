@@ -40,7 +40,23 @@ Run the File: Right-click on the file and select “Run ‘<filename>’”. You
 
 
 ○ Usage Instructions
+The code is a task management system written in Python. The user is presented with a series of prompts which vary depending upon the option choosen. This system allows users to register, log in, manage tasks, and generate reports. 
+It utilizes a simple text file storage mechanism to keep track of users and tasks.
 
+The code contains several functions that encapsulate various functionalities:
+
+User Registration (`reg_user`, `reg_userv2`)**:
+  - These functions allow new users to register by entering a username and password. They check for unique usernames and ensure passwords match before storing them in a text file.
+
+Adding Tasks (`add_task`)**:
+  - This function enables users to create new tasks. It collects details such as the task's title, description, due date, and the username of the person assigned to the task.
+  - It also checks if the assigned username exists before adding the task to a list and saving it to a file.
+
+Viewing Tasks (`view_all`, `view_my_tasks`)**:
+  - `view_all` displays tasks for all users, while `view_my_tasks` filters tasks to show only those assigned to the currently logged-in user. They format the output with labels for better readability.
+
+Generating Reports (`generate_reports`, `display_statistics`)**:
+  - These functions allow the admin user to generate and display reports, providing insights into task completion statistics and user activity.
 
 
 
